@@ -1,28 +1,27 @@
 {
-  "name": "reason-todo",
-  "version": "0.0.1",
-  "description": "I'm making a React-Reason todo app from scratch, cuz why not?",
-  "main": "index.js",
+  "name": "react-reason-todo",
+  "version": "0.1.0",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/kevinmccartney/Reason-Todo.git"
+    "build": "bsb -make-world",
+    "start": "bsb -make-world -w",
+    "clean": "bsb -clean-world",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "webpack": "webpack -w",
+    "webpack:production": "NODE_ENV=production webpack"
   },
   "keywords": [
-    "todo",
-    "reason",
-    "react",
-    "ui",
-    "interface",
-    "javascript",
-    "front-end"
+    "BuckleScript"
   ],
-  "author": "Kevin McCartney <hello@kevinmccartney.is>",
+  "author": "",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/kevinmccartney/Reason-Todo/issues"
+  "dependencies": {
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "reason-react": ">=0.4.0"
   },
-  "homepage": "https://github.com/kevinmccartney/Reason-Todo#readme"
+  "devDependencies": {
+    "bs-platform": "^3.1.5",
+    "webpack": "^4.0.1",
+    "webpack-cli": "^2.0.10"
+  }
 }
